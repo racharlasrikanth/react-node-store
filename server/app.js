@@ -14,7 +14,7 @@ const productRouter = require("./routes/productRoutes");
 const notFoundMiddleware = require('./middlewares/not-found');
 const errorHandlerMiddleware = require('./middlewares/error-handler');
 
-// default middlewares mandatory
+// default middlewares mandatory for access req.body
 app.use(express.json());
 
 app.get("/", (req, res) => {
